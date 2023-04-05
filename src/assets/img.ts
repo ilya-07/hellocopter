@@ -19,9 +19,13 @@ import sp_4 from "./img/sp_4.png";
 import imgNews_1 from "./img/imgNews_1.jpg";
 import imgNews_2 from "./img/imgNews_2.jpg";
 import imgNews_3 from "./img/imgNews_3.jpg";
+import fGroup from "./img/FGroup.png";
+import fHelo from "./img/FHelocopter.png";
 export const images: {
   [key: string]: string;
 } = {
+  fGroup,
+  fHelo,
   imgNews_1,
   imgNews_2,
   imgNews_3,
