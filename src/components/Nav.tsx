@@ -10,6 +10,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { countState } from "../redux/addHelicopterSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { showBasck } from "../redux/showBascketSlice";
+import Ewrgtr from "./ewr/ewrgtr";
 const links = ["about", "contact", "home", "news"];
 const Nav = () => {
   const dispatch = useDispatch();
@@ -46,7 +47,10 @@ const Nav = () => {
           </div>
         </div>
         <div className="flex md:gap-5 gap-2 items-center ml-3 md:ml-8">
-          <span className="text-white text-[14px] sm:text-[24px]">RU</span>
+          <span className="text-white text-[14px] sm:text-[24px]">
+            RU
+            <Ewrgtr />{" "}
+          </span>
           <span className="text-white text-[14px] sm:text-[24px]">ENG</span>
         </div>
         <div className="flex items-center gap-4 sm:gap-5 md:gap-8 ml-3 md:ml-10">

@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../common/Title";
 import { advenage } from "../assets/text";
 import { IAdventage } from "../common/types";
+import { motion } from "framer-motion";
 
 const Adventage = () => {
   return (
@@ -11,7 +12,15 @@ const Adventage = () => {
       </div>
       <div className="flex flex-wrap gap-5">
         {advenage.map((el: IAdventage, i: number) => (
-          <div
+          <motion.div
+            initial="start"
+            whileInView="end"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            variants={{
+              start: { opacity: 0, scale: -1 },
+              end: { opacity: 1, scale: 1 },
+            }}
             className=" p-[30px] sm:py-[35px] lg:py-[60px] flex-[29%] flex-col bg-[#1E1D1D]"
             key={i}
           >
@@ -24,7 +33,7 @@ const Adventage = () => {
             <p className="max-w-[238px] sm:max-w-[274px] lg:max-w-[376px] text-white">
               {el.text}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

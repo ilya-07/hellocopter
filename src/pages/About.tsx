@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/Example/ContactForm";
 import Desc from "../components/Desc";
 import Header from "../common/Header";
 import We from "../common/We";

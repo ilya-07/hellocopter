@@ -1,7 +1,7 @@
 import React from "react";
-import Title from "../common/Title";
-import Btn from "../common/Btn";
-import { images } from "../assets/img";
+import Title from "../../common/Title";
+import Btn from "../../common/Btn";
+import { images } from "../../assets/img";
 
 const ContactForm = () => {
   const inputStyle = `bg-transparent pt-7 border-b border-[#4B4A4A] h-[73px] block max-w-[210px] text-white focus:outline-none`;
